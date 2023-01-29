@@ -7,6 +7,6 @@
     @apply hover:underline cursor-pointer;
   }
   .btn{
-    @apply bg-gray-200 rounded-md ring-gray-200 focus:outline-none active:ring-gray-300 px-4 py-2 m-2 text-sm text-gray-800 hover:ring-1 hover:shadow-md
+    @apply bg-gray-50 rounded-md ring-gray-200 focus:outline-none active:ring-gray-300 px-4 py-2 m-2 text-sm text-gray-800 hover:ring-1 hover:shadow-md
   }
 }

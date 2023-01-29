@@ -50,7 +50,7 @@ export default function Home() {
       </div>
     </header>
     {/* body */}
-    <form className='flex flex-col items-center margin mt-44 flex-grow w-4/5'>
+    <form className='flex flex-col items-center margin mt-18 flex-grow w-4/5'>
       <Image
       src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'
       width={300}
@@ -63,9 +63,9 @@ export default function Home() {
         />
         <MicrophoneIcon className='h-5 ml-3 text-gray-500'/>
       </div>
-      <div className='flex flex-col w-1/2 space-y-2 justify-center mt-8 sm:space-y-0 sm:flex-row sm:space-x-4'>
+      <div className='flex flex-row  justify-center mt-8 sm:flex-row sm:space-x-4'>
         <button onClick={search} className='btn'>Google Search </button>
-        <button onClick={search} className='btn'> I'm Feeling Lucky</button>
+        <button onClick={search} className='btn'>I'm Feeling Lucky</button>
       </div>
     </form>
     {/* footer */}
