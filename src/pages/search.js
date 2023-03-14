@@ -1,6 +1,6 @@
 import Header from "components/Header"
 import Head from "next/head"
-import { API_KEY, CONTEXT_KEY } from "keys"
+// import { API_KEY, CONTEXT_KEY } from "keys"
 import Response from "Response"
 import Router, { useRouter } from "next/router"
 import SearchResults from "components/SearchResults"
@@ -32,7 +32,7 @@ export async function getServerSideProps(context){
   const useDummyData = false;
   const startIndex = context.query.start || "0";
 
-  const data = useDummyData ? Response : await fetch(`https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${context.query.term}&start=${startIndex}`).then(response => response.json());
+  const data = useDummyData ? Response : await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${context.query.term}&start=${startIndex}`).then(response => response.json());
 
   //After the SERVER has rendered... Pass teh results to the client...
   return{
