@@ -34,7 +34,7 @@ export async function getServerSideProps(context){
 
   const data = useDummyData ? Response : await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${context.query.term}&start=${startIndex}`).then(response => response.json());
 
-  //After the SERVER has rendered... Pass teh results to the client...
+  //After the SERVER has rendered... Pass the results to the client...
   return{
     props:{
       results: data,
