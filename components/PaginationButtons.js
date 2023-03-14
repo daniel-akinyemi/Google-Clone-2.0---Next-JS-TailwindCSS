@@ -1,6 +1,6 @@
 import { useRouter } from "next/router"
 import Link from "next/link";
-import {ChevronLeftIcon,ChevronRightIcon} from '@heroicons/react/24/solid'
+import {ChevronLeftIcon,ChevronRightIcon} from '@heroicons/react/solid'
 
 
 const PaginationButtons = () => {
