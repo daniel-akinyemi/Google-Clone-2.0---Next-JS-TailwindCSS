@@ -1,5 +1,10 @@
 import HeaderOption from "./HeaderOption"
-import { PlayIcon,NewspaperIcon,EllipsisHorizontalIcon,MapIcon,MagnifyingGlassIcon,PhotoIcon } from '@heroicons/react/24/solid'
+// import { PlayIcon,NewspaperIcon,EllipsisHorizontalIcon,MapIcon,MagnifyingGlassIcon,PhotoIcon } from '@heroicons/react/24/solid'
+import PlayIcon from "@heroicons/react/24/solid"
+import NewspaperIcon from "@heroicons/react/24/solid"
+import EllipsisHorizontalIcon from "@heroicons/react/24/solid"
+import MagnifyingGlassIcon from "@heroicons/react/24/solid"
+import PhotoIcon from "@heroicons/react/24/solid"
 
 
 const HeaderOptions = () => {
