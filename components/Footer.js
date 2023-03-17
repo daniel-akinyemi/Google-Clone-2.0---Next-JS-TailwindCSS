@@ -1,4 +1,4 @@
-import { GlobeAltIcon } from '@heroicons/react/outline'
+import { GlobeAltIcon } from '@heroicons/react/24/solid'
 import React from 'react'
 
 const Footer = () => {
